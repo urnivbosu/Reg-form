@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Enrollment</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <form id="enrollForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="website">Website Link:</label>
+      <input type="url" id="website" name="website"><br><br>
+      
+      <label for="image">Image Link:</label>
+      <input type="url" id="image" name="image"><br><br>
+      
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+      
+      <label>Skills:</label>
+      <input type="checkbox" id="java" name="skills" value="Java">
+      <label for="java">Java</label>
+      <input type="checkbox" id="python" name="skills" value="Python">
+      <label for="python">Python</label>
+      <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+      
+      <button type="submit">Enroll</button>
+      <button type="button" id="clearButton">Clear</button>
+    </form>
+  </div>
+  <div class="right" id="studentList">
+    <!-- Student details will be displayed here -->
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
